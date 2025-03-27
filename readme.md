@@ -31,6 +31,18 @@ GitHub Actions 实现 [GLaDOS][glados] 自动签到
 
 1. 注意: Cookie 以及接口输出数据, 包含帐号敏感信息, 因此不要随意公开
 
+
+## 推送
+打开 PushPlus, 微信扫码登录
+
+登录后会显示一个 Token, 复制出来
+
+转到 GitHub 打开仓库设置 Settings → Secrets and variables → Actions → New repository secret, 填写完成后保存
+
+Name: NOTIFY
+
+Secret: 前面获取的 Token 值
+
 ---
 
 [glados]: https://github.com/glados-network/GLaDOS
